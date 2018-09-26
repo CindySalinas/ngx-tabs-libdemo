@@ -6,21 +6,21 @@
   "author": "Juri Strumpflohner",
   "license": "MIT",
   "peerDependencies": {
-    "@angular/core": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "rxjs": "^5.5.2"
+    "@angular/core": "^6.0.0",
+    "@angular/common": "^6.0.0",
+    "rxjs": "^6.0.0"
   },
   "devDependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/compiler": "^5.2.9",
-    "@angular/compiler-cli": "^5.2.9",
-    "@angular/core": "^5.2.9",
-    "copyfiles": "^1.2.0",
-    "ng-packagr": "2.4.2",
-    "rxjs": "^5.5.2",
+    "@angular/common": "^6.1.8",
+    "@angular/compiler": "^6.1.8",
+    "@angular/compiler-cli": "^6.1.8",
+    "@angular/core": "^6.1.8",
+    "copyfiles": "^2.1.0",
+    "ng-packagr": "3.0.6",
+    "rxjs": "^6.3.2",
     "semantic-release": "^8.2.0",
     "tsickle": "^0.26.0",
-    "typescript": "2.4.2",
+    "typescript": "2.7.2",
     "zone.js": "^0.8.4"
   },
   "repository": {
@@ -28,11 +28,16 @@
     "url": "https://github.com/juristr/ngx-tabs-libdemo.git"
   },
   "main": "bundles/ngx-tabs-libdemo.umd.js",
-  "module": "esm5/ngx-tabs-libdemo.js",
-  "es2015": "esm2015/ngx-tabs-libdemo.js",
+  "module": "fesm5/ngx-tabs-libdemo.js",
+  "es2015": "fesm2015/ngx-tabs-libdemo.js",
   "typings": "ngx-tabs-libdemo.d.ts",
   "metadata": "ngx-tabs-libdemo.metadata.json",
+  "esm5": "esm5/ngx-tabs-libdemo.js",
+  "esm2015": "esm2015/ngx-tabs-libdemo.js",
+  "fesm5": "fesm5/ngx-tabs-libdemo.js",
+  "fesm2015": "fesm2015/ngx-tabs-libdemo.js",
+  "sideEffects": false,
   "dependencies": {
-    "tslib": "^1.7.1"
+    "tslib": "^1.9.0"
   }
 }

@@ -1,0 +1,8 @@
+/**
+ * @fileoverview added by tsickle
+ * @suppress {checkTypes} checked by tsc
+ */
+export { NgxTabsLibModule } from './src/ngx-tabs-lib.module';
+export { TabsService } from './src/tabs.service';
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljX2FwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25neC10YWJzLWxpYmRlbW8vIiwic291cmNlcyI6WyJwdWJsaWNfYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7QUFBQSxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSwyQkFBMkIsQ0FBQztBQUM3RCxPQUFPLEVBQUUsV0FBVyxFQUFFLE1BQVcsb0JBQW9CLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgeyBOZ3hUYWJzTGliTW9kdWxlIH0gZnJvbSAnLi9zcmMvbmd4LXRhYnMtbGliLm1vZHVsZSc7XG5leHBvcnQgeyBUYWJzU2VydmljZSB9ICAgICAgZnJvbSAnLi9zcmMvdGFicy5zZXJ2aWNlJztcbiJdfQ==

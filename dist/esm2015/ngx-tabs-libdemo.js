@@ -1,53 +1,3 @@
-import { Injectable, NgModule } from '@angular/core';
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-class TabsService {
-    constructor() {
-    }
-    /**
-     * @return {?}
-     */
-    signIn() {
-        console.log('test service');
-    }
-}
-TabsService.ERR_LOGIN_PROVIDER_NOT_FOUND = 'Login provider not found';
-TabsService.ERR_NOT_LOGGED_IN = 'Not logged in';
-TabsService.decorators = [
-    { type: Injectable },
-];
-/** @nocollapse */
-TabsService.ctorParameters = () => [];
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-class NgxTabsLibModule {
-    /**
-     * @return {?}
-     */
-    static forRoot() {
-        return {
-            ngModule: NgxTabsLibModule,
-            providers: [TabsService]
-        };
-    }
-}
-NgxTabsLibModule.decorators = [
-    { type: NgModule, args: [{},] },
-];
-/** @nocollapse */
-NgxTabsLibModule.ctorParameters = () => [];
-
-/**
- * @fileoverview added by tsickle
- * @suppress {checkTypes} checked by tsc
- */
-
 /**
  * @fileoverview added by tsickle
  * @suppress {checkTypes} checked by tsc
@@ -55,6 +5,6 @@ NgxTabsLibModule.ctorParameters = () => [];
 /**
  * Generated bundle index. Do not edit.
  */
+export { NgxTabsLibModule, TabsService } from './public_api';
 
-export { NgxTabsLibModule, TabsService };
-//# sourceMappingURL=ngx-tabs-libdemo.js.map
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmd4LXRhYnMtbGliZGVtby5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25neC10YWJzLWxpYmRlbW8vIiwic291cmNlcyI6WyJuZ3gtdGFicy1saWJkZW1vLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFJQSw4Q0FBYyxjQUFjLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEdlbmVyYXRlZCBidW5kbGUgaW5kZXguIERvIG5vdCBlZGl0LlxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vcHVibGljX2FwaSc7XG4iXX0=
