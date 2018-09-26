@@ -1,0 +1,16 @@
+{
+  "name": "@juristr/ngx-tabs-lib",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "main": "bundles/juristr-ngx-tabs-lib.umd.js",
+  "module": "esm5/juristr-ngx-tabs-lib.js",
+  "es2015": "esm2015/juristr-ngx-tabs-lib.js",
+  "typings": "juristr-ngx-tabs-lib.d.ts",
+  "metadata": "juristr-ngx-tabs-lib.metadata.json",
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

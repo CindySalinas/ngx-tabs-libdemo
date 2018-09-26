@@ -12,6 +12,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "main": "./dist/ngx-tabs-lib/bundles/juristr-ngx-tabs-lib.umd.js",
+  "module": "./dist/ngx-tabs-lib/esm5/juristr-ngx-tabs-lib.js",
+  "es2015": "./dist/ngx-tabs-lib/esm2015/juristr-ngx-tabs-lib.js",
+  "typings": "./dist/ngx-tabs-lib/juristr-ngx-tabs-lib.d.ts",
+  "metadata": "./dist/ngx-tabs-lib/juristr-ngx-tabs-lib.metadata.json",
   "private": true,
   "dependencies": {
     "@angular/common": "^6.0.0-rc.1",
