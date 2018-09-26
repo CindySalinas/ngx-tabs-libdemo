@@ -1,65 +1,34 @@
-import { Component, Input, ContentChildren, NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Injectable, NgModule } from '@angular/core';
 
-var TabComponent = (function () {
-    function TabComponent() {
-        this.active = false;
+var TabsService = (function () {
+    function TabsService() {
     }
-    return TabComponent;
-}());
-TabComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngx-tab',
-                styles: [
-                    "\n    .pane{\n      padding: 1em;\n    }\n  "
-                ],
-                template: "\n    <div [hidden]=\"!active\" class=\"pane\">\n      <ng-content></ng-content>\n    </div>\n  "
-            },] },
-];
-TabComponent.ctorParameters = function () { return []; };
-TabComponent.propDecorators = {
-    "tabTitle": [{ type: Input },],
-    "active": [{ type: Input },],
-};
-var TabsComponent = (function () {
-    function TabsComponent() {
-    }
-    TabsComponent.prototype.ngAfterContentInit = function () {
-        var activeTabs = this.tabs.filter(function (tab) { return tab.active; });
-        if (activeTabs.length === 0) {
-            this.selectTab(this.tabs.first);
-        }
+    TabsService.prototype.signIn = function () {
+        console.log('test service');
     };
-    TabsComponent.prototype.selectTab = function (tab) {
-        this.tabs.toArray().forEach(function (tab) { return (tab.active = false); });
-        tab.active = true;
-    };
-    return TabsComponent;
+    return TabsService;
 }());
-TabsComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'ngx-tabs',
-                template: "<ul class=\"nav nav-tabs\">\n    <li *ngFor=\"let tab of tabs\" (click)=\"selectTab(tab)\" [class.active]=\"tab.active\">\n        <a href=\"#\">{{tab.tabTitle}}</a>\n    </li>\n</ul>\n<ng-content></ng-content>",
-                styles: [".nav-tabs:after,.nav-tabs:before{-webkit-box-sizing:border-box;box-sizing:border-box}.nav{padding-left:0;margin-bottom:0;list-style:none;height:43px}ol,ul{margin-top:0;margin-bottom:10px}a{color:#337ab7;text-decoration:none}.nav-tabs{border-bottom:1px solid #ddd}.nav-tabs>li.active>a,.nav-tabs>li.active>a:focus,.nav-tabs>li.active>a:hover{color:#555;cursor:default;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent}.nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav-tabs>li{float:left;margin-bottom:-1px}.nav>li{position:relative;display:block}"]
-            },] },
+TabsService.ERR_LOGIN_PROVIDER_NOT_FOUND = 'Login provider not found';
+TabsService.ERR_NOT_LOGGED_IN = 'Not logged in';
+TabsService.decorators = [
+    { type: Injectable },
 ];
-TabsComponent.ctorParameters = function () { return []; };
-TabsComponent.propDecorators = {
-    "tabs": [{ type: ContentChildren, args: [TabComponent,] },],
-};
+TabsService.ctorParameters = function () { return []; };
 var NgxTabsLibModule = (function () {
     function NgxTabsLibModule() {
     }
+    NgxTabsLibModule.forRoot = function () {
+        return {
+            ngModule: NgxTabsLibModule,
+            providers: [TabsService]
+        };
+    };
     return NgxTabsLibModule;
 }());
 NgxTabsLibModule.decorators = [
-    { type: NgModule, args: [{
-                imports: [CommonModule],
-                declarations: [TabsComponent, TabComponent],
-                exports: [TabsComponent, TabComponent]
-            },] },
+    { type: NgModule, args: [{},] },
 ];
 NgxTabsLibModule.ctorParameters = function () { return []; };
 
-export { NgxTabsLibModule, TabsComponent, TabComponent };
+export { NgxTabsLibModule, TabsService };
 //# sourceMappingURL=ngx-tabs-libdemo.js.map
