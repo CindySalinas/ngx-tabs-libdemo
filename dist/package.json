@@ -3,18 +3,8 @@
   "name": "ngx-tabs-libdemo",
   "version": "0.0.0-development",
   "description": "Demo library to showcase Angular packaging format",
-  "scripts": {
-    "build": "ng-packagr -p package.json",
-    "copyPackageJson": "copyfiles package.json dist",
-    "semantic-release": "semantic-release pre && npm run copyPackageJson && npm publish dist && semantic-release post"
-  },
   "author": "Juri Strumpflohner",
   "license": "MIT",
-  "ngPackage": {
-    "lib": {
-      "entryFile": "public_api.ts"
-    }
-  },
   "peerDependencies": {
     "@angular/core": "^5.0.0",
     "@angular/common": "^5.0.0",
@@ -37,9 +27,12 @@
     "type": "git",
     "url": "https://github.com/juristr/ngx-tabs-libdemo.git"
   },
-  "main": "./dist/bundles/ngx-tabs-libdemo.umd.js",
-  "module": "./dist.esm5/ngx-tabs-libdemo.js",
-  "es2015": "./dist/esm2015/ngx-tabs-libdemo.js",
-  "typings": "./dist/ngx-tabs-libdemo.d.ts",
-  "metadata": "./dist/ngx-tabs-libdemo.metadata.json"
+  "main": "bundles/ngx-tabs-libdemo.umd.js",
+  "module": "esm5/ngx-tabs-libdemo.js",
+  "es2015": "esm2015/ngx-tabs-libdemo.js",
+  "typings": "ngx-tabs-libdemo.d.ts",
+  "metadata": "ngx-tabs-libdemo.metadata.json",
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
 }

@@ -2,7 +2,7 @@
 
 # compiled output
 .ng_pkg_build/
-/dist
+dist.*
 /tmp
 /out-tsc
 
