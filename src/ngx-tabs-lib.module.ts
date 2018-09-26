@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { TabsComponent } from './tabs.component';
-import { TabComponent } from './tab.component';
-
+import { TabsService } from './tabs.service';
 @NgModule({
-  imports: [CommonModule],
-  declarations: [TabsComponent, TabComponent],
-  exports: [TabsComponent, TabComponent]
 })
-export class NgxTabsLibModule {}
+export class NgxTabsLibModule {
+  static forRoot() {
+    return {
+      ngModule: NgxTabsLibModule,
+      providers: [TabsService]
+    }
+  }
+}
